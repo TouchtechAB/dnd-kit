@@ -19,7 +19,7 @@ import {
   UniqueIdentifier,
   useSensor,
   useSensors,
-} from '@dnd-kit/core';
+} from '@touchtech/dnd-kit-core';
 import {
   arrayMove,
   useSortable,
@@ -28,7 +28,7 @@ import {
   SortingStrategy,
   rectSortingStrategy,
   AnimateLayoutChanges,
-} from '@dnd-kit/sortable';
+} from '@touchtech/dnd-kit-sortable';
 
 import {createRange} from '../../utilities';
 import {Item, List, Wrapper} from '../../components';

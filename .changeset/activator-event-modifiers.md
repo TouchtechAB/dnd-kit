@@ -1,5 +1,5 @@
 ---
-"@dnd-kit/core": minor
+"@touchtech/dnd-kit-core": minor
 ---
 
 Now passing `activatorEvent` as an argument to `modifiers`

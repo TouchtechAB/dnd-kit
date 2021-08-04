@@ -4,10 +4,10 @@ import {
   KeyboardCode,
   RectEntry,
   KeyboardCoordinateGetter,
-} from '@dnd-kit/core';
+} from '@touchtech/dnd-kit-core';
 
-import type {SensorContext} from './types';
-import {getProjection} from './utilities';
+import type { SensorContext } from './types';
+import { getProjection } from './utilities';
 
 const directions: string[] = [
   KeyboardCode.Down,
@@ -26,7 +26,7 @@ export const sortableTreeKeyboardCoordinates: (
   {
     active,
     currentCoordinates,
-    context: {over, translatedRect, droppableContainers},
+    context: { over, translatedRect, droppableContainers },
   }
 ) => {
   if (directions.includes(event.code)) {
@@ -37,11 +37,11 @@ export const sortableTreeKeyboardCoordinates: (
     }
 
     const {
-      current: {items, offset},
+      current: { items, offset },
     } = context;
 
     if (horizontal.includes(event.code) && over?.id) {
-      const {depth, maxDepth, minDepth} = getProjection(
+      const { depth, maxDepth, minDepth } = getProjection(
         items,
         active,
         over.id,
@@ -110,11 +110,11 @@ export const sortableTreeKeyboardCoordinates: (
 
       if (newNode && activeNodeRect) {
         const newRect = getViewRect(newNode);
-        const newItem = items.find(({id}) => id === closestId);
-        const activeItem = items.find(({id}) => id === active);
+        const newItem = items.find(({ id }) => id === closestId);
+        const activeItem = items.find(({ id }) => id === active);
 
         if (newItem && activeItem) {
-          const {depth} = getProjection(
+          const { depth } = getProjection(
             items,
             active,
             closestId,

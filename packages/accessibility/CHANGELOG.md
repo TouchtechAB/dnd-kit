@@ -1,4 +1,4 @@
-# @dnd-kit/accessibility
+# @touchtech/dnd-kit-accessibility
 
 ## 3.0.0
 
@@ -22,7 +22,7 @@
   Example usage:
 
   ```tsx
-  import {DndContext, useDndMonitor} from '@dnd-kit/core';
+  import {DndContext, useDndMonitor} from '@touchtech/dnd-kit-core';
 
   function App() {
     return (

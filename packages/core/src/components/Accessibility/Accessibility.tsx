@@ -1,7 +1,7 @@
 import React, {useEffect, useMemo, useState} from 'react';
 import {createPortal} from 'react-dom';
-import {useUniqueId} from '@dnd-kit/utilities';
-import {HiddenText, LiveRegion, useAnnouncement} from '@dnd-kit/accessibility';
+import {useUniqueId} from '@touchtech/dnd-kit-utilities';
+import {HiddenText, LiveRegion, useAnnouncement} from '@touchtech/dnd-kit-accessibility';
 
 import type {Announcements, ScreenReaderInstructions} from './types';
 import type {UniqueIdentifier} from '../../types';

@@ -1,5 +1,5 @@
 ---
-"@dnd-kit/utilities": minor
+"@touchtech/dnd-kit-utilities": minor
 ---
 
-Move `Coordinates` interface along with `getEventCoordinates`, `isMouseEvent` and `isTouchEvent` helpers to @dnd-kit/utilities
+Move `Coordinates` interface along with `getEventCoordinates`, `isMouseEvent` and `isTouchEvent` helpers to @touchtech/dnd-kit-utilities

@@ -5,7 +5,7 @@ import {
   KeyboardCode,
   DroppableContainer,
   KeyboardCoordinateGetter,
-} from '@dnd-kit/core';
+} from '@touchtech/dnd-kit-core';
 
 const directions: string[] = [
   KeyboardCode.Down,
@@ -16,7 +16,7 @@ const directions: string[] = [
 
 export const sortableKeyboardCoordinates: KeyboardCoordinateGetter = (
   event,
-  {context: {active, droppableContainers, translatedRect, scrollableAncestors}}
+  { context: { active, droppableContainers, translatedRect, scrollableAncestors } }
 ) => {
   if (directions.includes(event.code)) {
     event.preventDefault();
@@ -87,13 +87,13 @@ export const sortableKeyboardCoordinates: KeyboardCoordinateGetter = (
         const newRect = getViewRect(newNode);
         const offset = hasDifferentScrollAncestors
           ? {
-              x: 0,
-              y: 0,
-            }
+            x: 0,
+            y: 0,
+          }
           : {
-              x: translatedRect.width - newRect.width,
-              y: translatedRect.height - newRect.height,
-            };
+            x: translatedRect.width - newRect.width,
+            y: translatedRect.height - newRect.height,
+          };
         const newCoordinates = {
           x: newRect.left - offset.x,
           y: newRect.top - offset.y,

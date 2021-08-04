@@ -1,5 +1,5 @@
-import type {LayoutRect} from '@dnd-kit/core';
-import type {SortingStrategy} from '../types';
+import type { LayoutRect } from '@touchtech/dnd-kit-core';
+import type { SortingStrategy } from '../types';
 
 // To-do: We should be calculating scale transformation
 const defaultScale = {
@@ -33,8 +33,8 @@ export const horizontalListSortingStrategy: SortingStrategy = ({
       x:
         activeIndex < overIndex
           ? newIndexRect.offsetLeft +
-            newIndexRect.width -
-            (activeNodeRect.offsetLeft + activeNodeRect.width)
+          newIndexRect.width -
+          (activeNodeRect.offsetLeft + activeNodeRect.width)
           : newIndexRect.offsetLeft - activeNodeRect.offsetLeft,
       y: 0,
       ...defaultScale,

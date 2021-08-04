@@ -9,8 +9,8 @@ import {
   useDroppable,
   UniqueIdentifier,
   DragEndEvent,
-} from '@dnd-kit/core';
-import {CSS} from '@dnd-kit/utilities';
+} from '@touchtech/dnd-kit-core';
+import {CSS} from '@touchtech/dnd-kit-utilities';
 
 const Playground = () => {
   const containers = ['A', 'B', 'C'];

@@ -15,7 +15,7 @@ import {
   UniqueIdentifier,
   useSensors,
   useSensor,
-} from '@dnd-kit/core';
+} from '@touchtech/dnd-kit-core';
 import {
   SortableContext,
   useSortable,
@@ -23,7 +23,7 @@ import {
   sortableKeyboardCoordinates,
   verticalListSortingStrategy,
   SortingStrategy,
-} from '@dnd-kit/sortable';
+} from '@touchtech/dnd-kit-sortable';
 
 import {Item, List} from '../../components';
 

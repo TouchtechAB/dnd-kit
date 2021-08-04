@@ -10,13 +10,13 @@ import {
   KeyboardSensor,
   useSensor,
   useSensors,
-} from '@dnd-kit/core';
+} from '@touchtech/dnd-kit-core';
 import {
   arrayMove,
   sortableKeyboardCoordinates,
   SortableContext,
   verticalListSortingStrategy,
-} from '@dnd-kit/sortable';
+} from '@touchtech/dnd-kit-sortable';
 
 import styles from './Virtualized.module.css';
 

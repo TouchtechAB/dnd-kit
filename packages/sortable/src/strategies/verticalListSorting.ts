@@ -1,5 +1,5 @@
-import type {LayoutRect} from '@dnd-kit/core';
-import type {SortingStrategy} from '../types';
+import type { LayoutRect } from '@touchtech/dnd-kit-core';
+import type { SortingStrategy } from '../types';
 
 // To-do: We should be calculating scale transformation
 const defaultScale = {
@@ -32,8 +32,8 @@ export const verticalListSortingStrategy: SortingStrategy = ({
       y:
         activeIndex < overIndex
           ? overIndexRect.offsetTop +
-            overIndexRect.height -
-            (activeNodeRect.offsetTop + activeNodeRect.height)
+          overIndexRect.height -
+          (activeNodeRect.offsetTop + activeNodeRect.height)
           : overIndexRect.offsetTop - activeNodeRect.offsetTop,
       ...defaultScale,
     };
@@ -81,13 +81,13 @@ function getItemGap(
     return previousRect
       ? currentRect.offsetTop - (previousRect.offsetTop + previousRect.height)
       : nextRect
-      ? nextRect.offsetTop - (currentRect.offsetTop + currentRect.height)
-      : 0;
+        ? nextRect.offsetTop - (currentRect.offsetTop + currentRect.height)
+        : 0;
   }
 
   return nextRect
     ? nextRect.offsetTop - (currentRect.offsetTop + currentRect.height)
     : previousRect
-    ? currentRect.offsetTop - (previousRect.offsetTop + previousRect.height)
-    : 0;
+      ? currentRect.offsetTop - (previousRect.offsetTop + previousRect.height)
+      : 0;
 }

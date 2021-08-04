@@ -1,6 +1,6 @@
-import type {Transform} from '@dnd-kit/utilities';
-import type {Active, Over} from '../store';
-import type {ClientRect, ViewRect} from '../types';
+import type { Transform } from '@touchtech/dnd-kit-utilities';
+import type { Active, Over } from '../store';
+import type { ClientRect, ViewRect } from '../types';
 
 export type Modifier = (args: {
   activatorEvent: Event | null;

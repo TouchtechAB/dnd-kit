@@ -2,7 +2,7 @@ import type {
   LayoutRect,
   UniqueIdentifier,
   UseDndContextReturnValue,
-} from '@dnd-kit/core';
+} from '@touchtech/dnd-kit-core';
 
 export function getSortedRects(
   items: UniqueIdentifier[],

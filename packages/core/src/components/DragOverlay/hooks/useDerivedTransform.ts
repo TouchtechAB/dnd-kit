@@ -1,7 +1,7 @@
-import {useRef} from 'react';
-import {Transform, useLazyMemo} from '@dnd-kit/utilities';
+import { useRef } from 'react';
+import { Transform, useLazyMemo } from '@touchtech/dnd-kit-utilities';
 
-import type {ViewRect} from '../../../types';
+import type { ViewRect } from '../../../types';
 
 export function useDerivedTransform(
   transform: Transform,

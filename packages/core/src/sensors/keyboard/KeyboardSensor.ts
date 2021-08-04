@@ -1,9 +1,9 @@
 import {
   add as getAdjustedCoordinates,
   subtract as getCoordinatesDelta,
-} from '@dnd-kit/utilities';
+} from '@touchtech/dnd-kit-utilities';
 
-import type {Coordinates} from '../../types';
+import type { Coordinates } from '../../types';
 import {
   defaultCoordinates,
   getBoundingClientRect,
@@ -12,11 +12,11 @@ import {
   getScrollPosition,
   getScrollElementRect,
 } from '../../utilities';
-import {Listeners} from '../utilities';
-import {EventName} from '../events';
-import type {SensorInstance, SensorProps, SensorOptions} from '../types';
+import { Listeners } from '../utilities';
+import { EventName } from '../events';
+import type { SensorInstance, SensorProps, SensorOptions } from '../types';
 
-import {KeyboardCoordinateGetter, KeyboardCode, KeyboardCodes} from './types';
+import { KeyboardCoordinateGetter, KeyboardCode, KeyboardCodes } from './types';
 import {
   defaultKeyboardCodes,
   defaultKeyboardCoordinateGetter,
@@ -26,7 +26,7 @@ export interface KeyboardSensorOptions extends SensorOptions {
   keyboardCodes?: KeyboardCodes;
   coordinateGetter?: KeyboardCoordinateGetter;
   scrollBehavior?: ScrollBehavior;
-  onActivation?({event}: {event: KeyboardEvent}): void;
+  onActivation?({ event }: { event: KeyboardEvent }): void;
 }
 
 export type KeyboardSensorProps = SensorProps<KeyboardSensorOptions>;
@@ -39,7 +39,7 @@ export class KeyboardSensor implements SensorInstance {
 
   constructor(private props: KeyboardSensorProps) {
     const {
-      event: {target},
+      event: { target },
     } = props;
 
     this.props = props;
@@ -61,7 +61,7 @@ export class KeyboardSensor implements SensorInstance {
   }
 
   private handleStart() {
-    const {activeNode, onStart} = this.props;
+    const { activeNode, onStart } = this.props;
 
     if (!activeNode.node.current) {
       throw new Error('Active draggable node is undefined');
@@ -80,14 +80,14 @@ export class KeyboardSensor implements SensorInstance {
 
   private handleKeyDown(event: Event) {
     if (event instanceof KeyboardEvent) {
-      const {coordinates} = this;
-      const {active, context, options} = this.props;
+      const { coordinates } = this;
+      const { active, context, options } = this.props;
       const {
         keyboardCodes = defaultKeyboardCodes,
         coordinateGetter = defaultKeyboardCoordinateGetter,
         scrollBehavior = 'smooth',
       } = options;
-      const {code} = event;
+      const { code } = event;
 
       if (keyboardCodes.end.includes(code)) {
         this.handleEnd(event);
@@ -110,7 +110,7 @@ export class KeyboardSensor implements SensorInstance {
           x: 0,
           y: 0,
         };
-        const {scrollableAncestors} = context.current;
+        const { scrollableAncestors } = context.current;
 
         for (const scrollContainer of scrollableAncestors) {
           const direction = event.code;
@@ -164,7 +164,7 @@ export class KeyboardSensor implements SensorInstance {
             const canFullyScrollToNewCoordinates =
               (direction === KeyboardCode.Right &&
                 scrollContainer.scrollLeft + coordinatesDelta.x <=
-                  maxScroll.x) ||
+                maxScroll.x) ||
               (direction === KeyboardCode.Left &&
                 scrollContainer.scrollLeft + coordinatesDelta.x >= minScroll.x);
 
@@ -192,7 +192,7 @@ export class KeyboardSensor implements SensorInstance {
             const canFullyScrollToNewCoordinates =
               (direction === KeyboardCode.Down &&
                 scrollContainer.scrollTop + coordinatesDelta.y <=
-                  maxScroll.y) ||
+                maxScroll.y) ||
               (direction === KeyboardCode.Up &&
                 scrollContainer.scrollTop + coordinatesDelta.y >= minScroll.y);
 
@@ -229,7 +229,7 @@ export class KeyboardSensor implements SensorInstance {
   }
 
   private handleMove(event: Event, coordinates: Coordinates) {
-    const {onMove} = this.props;
+    const { onMove } = this.props;
 
     event.preventDefault();
     onMove(coordinates);
@@ -237,7 +237,7 @@ export class KeyboardSensor implements SensorInstance {
   }
 
   private handleEnd(event: Event) {
-    const {onEnd} = this.props;
+    const { onEnd } = this.props;
 
     event.preventDefault();
     this.detach();
@@ -245,7 +245,7 @@ export class KeyboardSensor implements SensorInstance {
   }
 
   private handleCancel(event: Event) {
-    const {onCancel} = this.props;
+    const { onCancel } = this.props;
 
     event.preventDefault();
     this.detach();
@@ -267,12 +267,12 @@ export class KeyboardSensor implements SensorInstance {
           onActivation,
         }: KeyboardSensorOptions
       ) => {
-        const {code} = event.nativeEvent;
+        const { code } = event.nativeEvent;
 
         if (keyboardCodes.start.includes(code)) {
           event.preventDefault();
 
-          onActivation?.({event: event.nativeEvent});
+          onActivation?.({ event: event.nativeEvent });
 
           return true;
         }

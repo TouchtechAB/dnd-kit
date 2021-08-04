@@ -1,6 +1,6 @@
-import {CSS} from '@dnd-kit/utilities';
+import { CSS } from '@touchtech/dnd-kit-utilities';
 
-import type {AnimateLayoutChanges, SortableTransition} from './types';
+import type { AnimateLayoutChanges, SortableTransition } from './types';
 
 export const defaultAnimateLayoutChanges: AnimateLayoutChanges = ({
   isSorting,

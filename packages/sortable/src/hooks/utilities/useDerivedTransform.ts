@@ -1,6 +1,6 @@
-import {useEffect, useRef, useState} from 'react';
-import {getBoundingClientRect, LayoutRect} from '@dnd-kit/core';
-import type {Transform} from '@dnd-kit/utilities';
+import { useEffect, useRef, useState } from 'react';
+import { getBoundingClientRect, LayoutRect } from '@touchtech/dnd-kit-core';
+import type { Transform } from '@touchtech/dnd-kit-utilities';
 
 interface Arguments {
   rect: React.MutableRefObject<LayoutRect | null>;
@@ -13,7 +13,7 @@ interface Arguments {
  * When the index of an item changes while sorting,
  * we need to temporarily disable the transforms
  */
-export function useDerivedTransform({rect, disabled, index, node}: Arguments) {
+export function useDerivedTransform({ rect, disabled, index, node }: Arguments) {
   const [derivedTransform, setDerivedtransform] = useState<Transform | null>(
     null
   );

@@ -1,5 +1,5 @@
-import {useState, useCallback, useMemo, useRef, useEffect} from 'react';
-import {add} from '@dnd-kit/utilities';
+import { useState, useCallback, useMemo, useRef, useEffect } from 'react';
+import { add } from '@touchtech/dnd-kit-utilities';
 
 import {
   defaultCoordinates,
@@ -7,7 +7,7 @@ import {
   getScrollCoordinates,
   getScrollOffsets,
 } from '../../utilities';
-import type {Coordinates} from '../../types';
+import type { Coordinates } from '../../types';
 
 type ScrollCoordinates = Map<HTMLElement | Window, Coordinates>;
 
@@ -95,9 +95,9 @@ export function useScrollOffsets(elements: Element[]): Coordinates {
     if (elements.length) {
       return scrollCoordinates
         ? Array.from(scrollCoordinates.values()).reduce(
-            (acc, coordinates) => add(acc, coordinates),
-            defaultCoordinates
-          )
+          (acc, coordinates) => add(acc, coordinates),
+          defaultCoordinates
+        )
         : getScrollOffsets(elements);
     }
 

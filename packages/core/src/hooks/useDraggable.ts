@@ -1,8 +1,8 @@
-import {createContext, useContext, useEffect, useMemo} from 'react';
-import {Transform, useNodeRef, useUniqueId} from '@dnd-kit/utilities';
+import { createContext, useContext, useEffect, useMemo } from 'react';
+import { Transform, useNodeRef, useUniqueId } from '@touchtech/dnd-kit-utilities';
 
-import {Context, Data} from '../store';
-import {ActiveDraggableContext} from '../components/DndContext';
+import { Context, Data } from '../store';
+import { ActiveDraggableContext } from '../components/DndContext';
 import {
   useData,
   useSyntheticListeners,
@@ -45,7 +45,7 @@ export function useDraggable({
     activators,
     over,
   } = useContext(Context);
-  const {role = defaultRole, roleDescription = 'draggable', tabIndex = 0} =
+  const { role = defaultRole, roleDescription = 'draggable', tabIndex = 0 } =
     attributes ?? {};
   const isDragging = active?.id === id;
   const transform: Transform | null = useContext(
@@ -57,7 +57,7 @@ export function useDraggable({
 
   useEffect(
     () => {
-      draggableNodes[id] = {id, key, node, data: dataRef};
+      draggableNodes[id] = { id, key, node, data: dataRef };
 
       return () => {
         const node = draggableNodes[id];

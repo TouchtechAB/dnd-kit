@@ -1,10 +1,10 @@
 import React from 'react';
-import {MeasuringStrategy} from '@dnd-kit/core';
+import {MeasuringStrategy} from '@touchtech/dnd-kit-core';
 import {
   AnimateLayoutChanges,
   defaultAnimateLayoutChanges,
   rectSortingStrategy,
-} from '@dnd-kit/sortable';
+} from '@touchtech/dnd-kit-sortable';
 
 import {Sortable, Props as SortableProps} from './Sortable';
 import {GridContainer} from '../../components';

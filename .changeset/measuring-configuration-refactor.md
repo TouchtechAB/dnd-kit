@@ -1,5 +1,5 @@
 ---
-"@dnd-kit/core": major
+"@touchtech/dnd-kit-core": major
 ---
 
 The `layoutMeasuring` prop of `DndContext` has been renamed to `measuring`. 
@@ -22,7 +22,7 @@ import {
   DndContext,
   getBoundingClientRect,
   MeasuringConfiguration,
-} from '@dnd-kit/core';
+} from '@touchtech/dnd-kit-core';
 
 const measuringConfig: MeasuringConfiguration = {
   draggable: {

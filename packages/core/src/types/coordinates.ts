@@ -1,6 +1,6 @@
-import type {Coordinates} from '@dnd-kit/utilities';
+import type { Coordinates } from '@touchtech/dnd-kit-utilities';
 
-export type {Coordinates};
+export type { Coordinates };
 
 export type DistanceMeasurement =
   | number
@@ -24,7 +24,7 @@ export interface ViewRect extends LayoutRect {
   bottom: number;
 }
 
-export interface ClientRect extends ViewRect {}
+export interface ClientRect extends ViewRect { }
 
 export interface ScrollCoordinates {
   initial: Coordinates;

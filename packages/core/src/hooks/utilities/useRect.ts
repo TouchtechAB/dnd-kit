@@ -1,8 +1,8 @@
-import {useRef} from 'react';
-import {useLazyMemo} from '@dnd-kit/utilities';
+import { useRef } from 'react';
+import { useLazyMemo } from '@touchtech/dnd-kit-utilities';
 
-import {getBoundingClientRect} from '../../utilities';
-import type {LayoutRect} from '../../types';
+import { getBoundingClientRect } from '../../utilities';
+import type { LayoutRect } from '../../types';
 
 type RectFn<T, U> = (element: U) => T;
 

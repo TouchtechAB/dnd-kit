@@ -1,10 +1,10 @@
-import {useContext, useEffect, useMemo, useRef} from 'react';
-import {useDraggable, useDroppable, UseDraggableArguments} from '@dnd-kit/core';
-import {CSS, useCombinedRefs} from '@dnd-kit/utilities';
+import { useContext, useEffect, useMemo, useRef } from 'react';
+import { useDraggable, useDroppable, UseDraggableArguments } from '@touchtech/dnd-kit-core';
+import { CSS, useCombinedRefs } from '@touchtech/dnd-kit-utilities';
 
-import {Context} from '../components';
-import type {SortingStrategy} from '../types';
-import {arrayMove, isValidIndex} from '../utilities';
+import { Context } from '../components';
+import type { SortingStrategy } from '../types';
+import { arrayMove, isValidIndex } from '../utilities';
 import {
   defaultAnimateLayoutChanges,
   defaultAttributes,
@@ -12,8 +12,8 @@ import {
   disabledTransition,
   transitionProperty,
 } from './defaults';
-import type {AnimateLayoutChanges, SortableTransition} from './types';
-import {useDerivedTransform} from './utilities';
+import type { AnimateLayoutChanges, SortableTransition } from './types';
+import { useDerivedTransform } from './utilities';
 
 export interface Arguments extends UseDraggableArguments {
   animateLayoutChanges?: AnimateLayoutChanges;
@@ -43,10 +43,10 @@ export function useSortable({
   } = useContext(Context);
   const index = items.indexOf(id);
   const data = useMemo(
-    () => ({sortable: {containerId, index, items}, ...customData}),
+    () => ({ sortable: { containerId, index, items }, ...customData }),
     [containerId, customData, index, items]
   );
-  const {rect, node, setNodeRef: setDroppableNodeRef} = useDroppable({
+  const { rect, node, setNodeRef: setDroppableNodeRef } = useDroppable({
     id,
     data,
   });
@@ -83,13 +83,13 @@ export function useSortable({
   const strategy = localStrategy ?? globalStrategy;
   const finalTransform = displaceItem
     ? dragSourceDisplacement ??
-      strategy({
-        layoutRects: sortedRects,
-        activeNodeRect,
-        activeIndex,
-        overIndex,
-        index,
-      })
+    strategy({
+      layoutRects: sortedRects,
+      activeNodeRect,
+      activeIndex,
+      overIndex,
+      index,
+    })
     : null;
   const newIndex =
     isValidIndex(activeIndex) && isValidIndex(overIndex)

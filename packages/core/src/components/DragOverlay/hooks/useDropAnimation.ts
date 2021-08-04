@@ -1,10 +1,10 @@
-import {useEffect, useState} from 'react';
-import {CSS, Transform, useIsomorphicLayoutEffect} from '@dnd-kit/utilities';
+import { useEffect, useState } from 'react';
+import { CSS, Transform, useIsomorphicLayoutEffect } from '@touchtech/dnd-kit-utilities';
 
-import type {UniqueIdentifier} from '../../../types';
-import type {DraggableNodes} from '../../../store';
-import {getViewRect} from '../../../utilities';
-import {getMeasurableNode} from '../../../utilities/nodes';
+import type { UniqueIdentifier } from '../../../types';
+import type { DraggableNodes } from '../../../store';
+import { getViewRect } from '../../../utilities';
+import { getMeasurableNode } from '../../../utilities/nodes';
 
 export interface DropAnimation {
   duration: number;

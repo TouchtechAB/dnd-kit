@@ -1,13 +1,13 @@
-import {useContext, useEffect, useRef} from 'react';
+import { useContext, useEffect, useRef } from 'react';
 import {
   useIsomorphicLayoutEffect,
   useNodeRef,
   useUniqueId,
-} from '@dnd-kit/utilities';
+} from '@touchtech/dnd-kit-utilities';
 
-import {Context, Action, Data} from '../store';
-import type {LayoutRect} from '../types';
-import {useData} from './utilities';
+import { Context, Action, Data } from '../store';
+import type { LayoutRect } from '../types';
+import { useData } from './utilities';
 
 export interface UseDroppableArguments {
   id: string;
@@ -23,7 +23,7 @@ export function useDroppable({
   id,
 }: UseDroppableArguments) {
   const key = useUniqueId(ID_PREFIX);
-  const {active, dispatch, over} = useContext(Context);
+  const { active, dispatch, over } = useContext(Context);
   const rect = useRef<LayoutRect | null>(null);
   const [nodeRef, setNodeRef] = useNodeRef();
   const dataRef = useData(data);

@@ -1,7 +1,7 @@
-describe('@dnd-kit/utilities', () => {
+describe('@touchtech/dnd-kit-utilities', () => {
   it('works', () => {
     expect(true).toBe(true);
   });
 });
 
-export {};
+export { };

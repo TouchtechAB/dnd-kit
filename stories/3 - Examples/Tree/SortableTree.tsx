@@ -18,12 +18,12 @@ import {
   DropAnimation,
   defaultDropAnimation,
   Modifier,
-} from '@dnd-kit/core';
+} from '@touchtech/dnd-kit-core';
 import {
   SortableContext,
   arrayMove,
   verticalListSortingStrategy,
-} from '@dnd-kit/sortable';
+} from '@touchtech/dnd-kit-sortable';
 
 import {
   buildTree,

@@ -1,7 +1,7 @@
-import {useRef} from 'react';
-import {useIsomorphicLayoutEffect} from '@dnd-kit/utilities';
+import { useRef } from 'react';
+import { useIsomorphicLayoutEffect } from '@touchtech/dnd-kit-utilities';
 
-import type {Data} from '../../store';
+import type { Data } from '../../store';
 
 export function useData(data: Data | undefined) {
   const dataRef = useRef(data);

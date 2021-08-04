@@ -1,9 +1,9 @@
-import {useCallback, useEffect, useRef, useState} from 'react';
-import {useLazyMemo} from '@dnd-kit/utilities';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import { useLazyMemo } from '@touchtech/dnd-kit-utilities';
 
-import {getLayoutRect} from '../../utilities';
-import type {DroppableContainer, LayoutRectMap} from '../../store/types';
-import type {LayoutRect} from '../../types';
+import { getLayoutRect } from '../../utilities';
+import type { DroppableContainer, LayoutRectMap } from '../../store/types';
+import type { LayoutRect } from '../../types';
 
 interface Arguments {
   dragging: boolean;
@@ -39,10 +39,10 @@ const defaultConfig: DroppableMeasuring = {
 
 export function useDroppableMeasuring(
   containers: DroppableContainer[],
-  {dragging, dependencies, config}: Arguments
+  { dragging, dependencies, config }: Arguments
 ) {
   const [willRecomputeLayouts, setWillRecomputeLayouts] = useState(false);
-  const {frequency, measure, strategy} = {
+  const { frequency, measure, strategy } = {
     ...defaultConfig,
     ...config,
   };
@@ -150,7 +150,7 @@ function createLayoutRectMap(
         continue;
       }
 
-      const {id, rect} = container;
+      const { id, rect } = container;
 
       if (rect.current == null) {
         continue;

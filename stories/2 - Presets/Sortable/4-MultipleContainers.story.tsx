@@ -4,8 +4,8 @@ import {
   closestCorners,
   CollisionDetection,
   rectIntersection,
-} from '@dnd-kit/core';
-import {rectSortingStrategy} from '@dnd-kit/sortable';
+} from '@touchtech/dnd-kit-core';
+import {rectSortingStrategy} from '@touchtech/dnd-kit-sortable';
 
 import {
   MultipleContainers,

@@ -1,15 +1,15 @@
 import React from 'react';
-import {MeasuringStrategy} from '@dnd-kit/core';
-import {restrictToWindowEdges} from '@dnd-kit/modifiers';
+import {MeasuringStrategy} from '@touchtech/dnd-kit-core';
+import {restrictToWindowEdges} from '@touchtech/dnd-kit-modifiers';
 import {
   AnimateLayoutChanges,
   defaultAnimateLayoutChanges,
   verticalListSortingStrategy,
-} from '@dnd-kit/sortable';
+} from '@touchtech/dnd-kit-sortable';
 import {
   restrictToVerticalAxis,
   restrictToFirstScrollableAncestor,
-} from '@dnd-kit/modifiers';
+} from '@touchtech/dnd-kit-modifiers';
 
 import {createRange} from '../../utilities';
 import {Sortable, Props as SortableProps} from './Sortable';
