@@ -209,6 +209,18 @@ export const MinimumDistanceXY = () => (
 
 MinimumDistanceXY.storyName = 'Minimum Distance – X&Y Axis';
 
+export const MinimumDistanceXToleranceY = () => (
+  <DraggableStory
+    label="I'm activated after dragging 15px on the x axis and aborted after dragging 30px on the y axis"
+    activationConstraint={{
+      distance: {x: 15},
+      tolerance: {y: 30},
+    }}
+  />
+);
+
+MinimumDistanceXToleranceY.storyName = 'Minimum Distance X Axis and Tolerance Y Axis';
+
 export const HorizontalAxis = () => (
   <DraggableStory
     label="Draggable horizontally"
