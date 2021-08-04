@@ -1,4 +1,4 @@
-import type { LayoutRect } from '@touchtech/dnd-kit-core';
+import type { LayoutRect } from '@touchtech/custom-dnd-kit-core';
 import type { SortingStrategy } from '../types';
 
 // To-do: We should be calculating scale transformation

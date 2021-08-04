@@ -1,6 +1,6 @@
 import { useContext, useEffect, useMemo, useRef } from 'react';
-import { useDraggable, useDroppable, UseDraggableArguments } from '@touchtech/dnd-kit-core';
-import { CSS, useCombinedRefs } from '@touchtech/dnd-kit-utilities';
+import { useDraggable, useDroppable, UseDraggableArguments } from '@touchtech/custom-dnd-kit-core';
+import { CSS, useCombinedRefs } from '@touchtech/custom-dnd-kit-utilities';
 
 import { Context } from '../components';
 import type { SortingStrategy } from '../types';

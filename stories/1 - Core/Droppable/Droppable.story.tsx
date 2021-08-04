@@ -9,7 +9,7 @@ import {
   UniqueIdentifier,
   CollisionDetection as CollisionDetectionType,
   Modifiers,
-} from '@touchtech/dnd-kit-core';
+} from '@touchtech/custom-dnd-kit-core';
 
 import {Draggable, Droppable, GridContainer, Wrapper} from '../../components';
 

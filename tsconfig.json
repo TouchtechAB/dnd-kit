@@ -17,19 +17,19 @@
       "./types"
     ],
     "paths": {
-      "@touchtech/dnd-kit-core": [
+      "@touchtech/custom-dnd-kit-core": [
         "packages/core/src"
       ],
-      "@touchtech/dnd-kit-accessibility": [
+      "@touchtech/custom-dnd-kit-accessibility": [
         "packages/accessibility/src"
       ],
-      "@touchtech/dnd-kit-modifiers": [
+      "@touchtech/custom-dnd-kit-modifiers": [
         "packages/modifiers/src"
       ],
-      "@touchtech/dnd-kit-sortable": [
+      "@touchtech/custom-dnd-kit-sortable": [
         "packages/sortable/src"
       ],
-      "@touchtech/dnd-kit-utilities": [
+      "@touchtech/custom-dnd-kit-utilities": [
         "packages/utilities/src"
       ],
       "$test/*": [

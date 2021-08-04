@@ -1,15 +1,15 @@
-# @touchtech/dnd-kit-core
+# @touchtech/custom-dnd-kit-core
 
-[![Stable release](https://img.shields.io/npm/v/@touchtech/dnd-kit-core.svg)](https://npm.im/@touchtech/dnd-kit-core)
+[![Stable release](https://img.shields.io/npm/v/@touchtech/custom-dnd-kit-core.svg)](https://npm.im/@touchtech/custom-dnd-kit-core)
 
 @dnd-kit – a lightweight React library for building performant and accessible drag and drop experiences.
 
 ## Installation
 
-To get started, install the `@touchtech/dnd-kit-core` package via npm or yarn:
+To get started, install the `@touchtech/custom-dnd-kit-core` package via npm or yarn:
 
 ```
-npm install @touchtech/dnd-kit-core
+npm install @touchtech/custom-dnd-kit-core
 ```
 
 ## Usage

@@ -1,5 +1,5 @@
 import React from 'react';
-import {useDroppable, UniqueIdentifier} from '@touchtech/dnd-kit-core';
+import {useDroppable, UniqueIdentifier} from '@touchtech/custom-dnd-kit-core';
 import classNames from 'classnames';
 
 import {droppable} from './droppable-svg';

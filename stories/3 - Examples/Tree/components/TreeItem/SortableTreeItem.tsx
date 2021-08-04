@@ -1,6 +1,6 @@
 import React, {CSSProperties} from 'react';
-import {AnimateLayoutChanges, useSortable} from '@touchtech/dnd-kit-sortable';
-import {CSS} from '@touchtech/dnd-kit-utilities';
+import {AnimateLayoutChanges, useSortable} from '@touchtech/custom-dnd-kit-sortable';
+import {CSS} from '@touchtech/custom-dnd-kit-utilities';
 
 import {TreeItem, Props as TreeItemProps} from './TreeItem';
 import {iOS} from '../../utilities';

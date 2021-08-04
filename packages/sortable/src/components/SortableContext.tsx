@@ -1,6 +1,6 @@
 import React, {MutableRefObject, useEffect, useMemo, useRef} from 'react';
-import {useDndContext, LayoutRect, UniqueIdentifier} from '@touchtech/dnd-kit-core';
-import {useIsomorphicLayoutEffect, useUniqueId} from '@touchtech/dnd-kit-utilities';
+import {useDndContext, LayoutRect, UniqueIdentifier} from '@touchtech/custom-dnd-kit-core';
+import {useIsomorphicLayoutEffect, useUniqueId} from '@touchtech/custom-dnd-kit-utilities';
 
 import type {SortingStrategy} from '../types';
 import {getSortedRects} from '../utilities';

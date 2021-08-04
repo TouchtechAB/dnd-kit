@@ -1,4 +1,4 @@
-import type { FirstArgument, Transform } from '@touchtech/dnd-kit-utilities';
+import type { FirstArgument, Transform } from '@touchtech/custom-dnd-kit-utilities';
 
 import type { Modifiers, Modifier } from './types';
 

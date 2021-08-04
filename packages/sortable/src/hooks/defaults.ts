@@ -1,4 +1,4 @@
-import { CSS } from '@touchtech/dnd-kit-utilities';
+import { CSS } from '@touchtech/custom-dnd-kit-utilities';
 
 import type { AnimateLayoutChanges, SortableTransition } from './types';
 

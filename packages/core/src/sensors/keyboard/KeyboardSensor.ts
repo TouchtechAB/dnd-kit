@@ -1,7 +1,7 @@
 import {
   add as getAdjustedCoordinates,
   subtract as getCoordinatesDelta,
-} from '@touchtech/dnd-kit-utilities';
+} from '@touchtech/custom-dnd-kit-utilities';
 
 import type { Coordinates } from '../../types';
 import {

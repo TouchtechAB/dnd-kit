@@ -1,7 +1,7 @@
 import {
   subtract as getCoordinatesDelta,
   getEventCoordinates,
-} from '@touchtech/dnd-kit-utilities';
+} from '@touchtech/custom-dnd-kit-utilities';
 
 import {
   getEventListenerTarget,

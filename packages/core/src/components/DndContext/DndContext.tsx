@@ -16,7 +16,7 @@ import {
   useIsomorphicLayoutEffect,
   useNodeRef,
   useUniqueId,
-} from '@touchtech/dnd-kit-utilities';
+} from '@touchtech/custom-dnd-kit-utilities';
 
 import {
   Action,

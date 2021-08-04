@@ -1,4 +1,4 @@
-import { canUseDOM } from '@touchtech/dnd-kit-utilities';
+import { canUseDOM } from '@touchtech/custom-dnd-kit-utilities';
 
 export function isDocumentScrollingElement(element: Element | null) {
   if (!canUseDOM || !element) {

@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useMemo } from 'react';
-import { Transform, useNodeRef, useUniqueId } from '@touchtech/dnd-kit-utilities';
+import { Transform, useNodeRef, useUniqueId } from '@touchtech/custom-dnd-kit-utilities';
 
 import { Context, Data } from '../store';
 import { ActiveDraggableContext } from '../components/DndContext';

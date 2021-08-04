@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { CSS, Transform, useIsomorphicLayoutEffect } from '@touchtech/dnd-kit-utilities';
+import { CSS, Transform, useIsomorphicLayoutEffect } from '@touchtech/custom-dnd-kit-utilities';
 
 import type { UniqueIdentifier } from '../../../types';
 import type { DraggableNodes } from '../../../store';

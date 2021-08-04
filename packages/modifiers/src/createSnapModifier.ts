@@ -1,4 +1,4 @@
-import type { Modifier } from '@touchtech/dnd-kit-core';
+import type { Modifier } from '@touchtech/custom-dnd-kit-core';
 
 export function createSnapModifier(gridSize: number): Modifier {
   return ({ transform }) => ({

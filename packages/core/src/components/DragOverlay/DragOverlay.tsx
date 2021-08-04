@@ -1,5 +1,5 @@
 import React, {useContext, useEffect, useRef} from 'react';
-import {CSS} from '@touchtech/dnd-kit-utilities';
+import {CSS} from '@touchtech/custom-dnd-kit-utilities';
 
 import {getRelativeTransformOrigin} from '../../utilities';
 import {applyModifiers, Modifiers} from '../../modifiers';

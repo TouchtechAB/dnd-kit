@@ -5,7 +5,7 @@ import {
   KeyboardCode,
   DroppableContainer,
   KeyboardCoordinateGetter,
-} from '@touchtech/dnd-kit-core';
+} from '@touchtech/custom-dnd-kit-core';
 
 const directions: string[] = [
   KeyboardCode.Down,

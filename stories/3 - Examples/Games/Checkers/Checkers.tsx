@@ -6,7 +6,7 @@ import {
   DragEndEvent,
   DragStartEvent,
   DragOverlay,
-} from '@touchtech/dnd-kit-core';
+} from '@touchtech/custom-dnd-kit-core';
 import {
   Board,
   Cell,

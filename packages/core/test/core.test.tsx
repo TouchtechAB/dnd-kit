@@ -1,4 +1,4 @@
-describe('@touchtech/dnd-kit-core', () => {
+describe('@touchtech/custom-dnd-kit-core', () => {
   it('works', () => {
     expect(true).toBe(true);
   });

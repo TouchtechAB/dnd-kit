@@ -1,9 +1,9 @@
-import type {Modifier, ViewRect} from '@touchtech/dnd-kit-core';
-import type {FirstArgument, Transform} from '@touchtech/dnd-kit-utilities';
+import type {Modifier, ViewRect} from '@touchtech/custom-dnd-kit-core';
+import type {FirstArgument, Transform} from '@touchtech/custom-dnd-kit-utilities';
 
 import {restrictToHorizontalAxis, restrictToVerticalAxis} from '../src';
 
-describe('@touchtech/dnd-kit-modifiers', () => {
+describe('@touchtech/custom-dnd-kit-modifiers', () => {
   const defaultRect: ViewRect = {
     left: 0,
     right: 0,

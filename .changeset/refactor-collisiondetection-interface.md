@@ -1,6 +1,6 @@
 ---
-"@touchtech/dnd-kit-core": major
-"@touchtech/dnd-kit-sortable": patch
+"@touchtech/custom-dnd-kit-core": major
+"@touchtech/custom-dnd-kit-sortable": patch
 ---
 
 Breaking change: The `CollisionDetection` interface has been refactored. It now receives an object that contains the `active` draggable node, along with the `collisionRect` and an array of `droppableContainers`.

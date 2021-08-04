@@ -1,4 +1,4 @@
-import type { Coordinates } from '@touchtech/dnd-kit-utilities';
+import type { Coordinates } from '@touchtech/custom-dnd-kit-utilities';
 
 export type { Coordinates };
 

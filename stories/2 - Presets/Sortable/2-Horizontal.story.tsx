@@ -1,11 +1,11 @@
 import React from 'react';
-import {MeasuringStrategy} from '@touchtech/dnd-kit-core';
+import {MeasuringStrategy} from '@touchtech/custom-dnd-kit-core';
 import {
   AnimateLayoutChanges,
   defaultAnimateLayoutChanges,
   horizontalListSortingStrategy,
-} from '@touchtech/dnd-kit-sortable';
-import {restrictToHorizontalAxis} from '@touchtech/dnd-kit-modifiers';
+} from '@touchtech/custom-dnd-kit-sortable';
+import {restrictToHorizontalAxis} from '@touchtech/custom-dnd-kit-modifiers';
 
 import {createRange} from '../../utilities';
 import {List} from '../../components';

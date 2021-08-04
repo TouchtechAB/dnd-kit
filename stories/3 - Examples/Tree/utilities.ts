@@ -1,4 +1,4 @@
-import { arrayMove } from '@touchtech/dnd-kit-sortable';
+import { arrayMove } from '@touchtech/custom-dnd-kit-sortable';
 
 import type { FlattenedItem, TreeItem, TreeItems } from './types';
 

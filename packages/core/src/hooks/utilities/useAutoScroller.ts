@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef } from 'react';
-import { useInterval } from '@touchtech/dnd-kit-utilities';
+import { useInterval } from '@touchtech/custom-dnd-kit-utilities';
 
 import { getScrollDirectionAndSpeed, defaultCoordinates } from '../../utilities';
 import type { Coordinates, Direction, ViewRect } from '../../types';

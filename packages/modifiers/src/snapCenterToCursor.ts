@@ -1,9 +1,9 @@
-import type { Modifier } from '@touchtech/dnd-kit-core';
+import type { Modifier } from '@touchtech/custom-dnd-kit-core';
 import {
   getEventCoordinates,
   isTouchEvent,
   isMouseEvent,
-} from '@touchtech/dnd-kit-utilities';
+} from '@touchtech/custom-dnd-kit-utilities';
 
 export const snapCenterToCursor: Modifier = ({
   activatorEvent,

@@ -1,5 +1,5 @@
 ---
-"@touchtech/dnd-kit-modifiers": minor
+"@touchtech/custom-dnd-kit-modifiers": minor
 ---
 
 Add `snapCenterToCursor` modifier

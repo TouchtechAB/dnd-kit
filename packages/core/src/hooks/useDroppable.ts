@@ -3,7 +3,7 @@ import {
   useIsomorphicLayoutEffect,
   useNodeRef,
   useUniqueId,
-} from '@touchtech/dnd-kit-utilities';
+} from '@touchtech/custom-dnd-kit-utilities';
 
 import { Context, Action, Data } from '../store';
 import type { LayoutRect } from '../types';

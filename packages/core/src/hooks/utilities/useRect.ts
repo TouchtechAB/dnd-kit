@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { useLazyMemo } from '@touchtech/dnd-kit-utilities';
+import { useLazyMemo } from '@touchtech/custom-dnd-kit-utilities';
 
 import { getBoundingClientRect } from '../../utilities';
 import type { LayoutRect } from '../../types';

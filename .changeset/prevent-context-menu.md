@@ -1,5 +1,5 @@
 ---
-"@touchtech/dnd-kit-core": minor
+"@touchtech/custom-dnd-kit-core": minor
 ---
 
 Prevent context menu from opening when pointer sensor is active

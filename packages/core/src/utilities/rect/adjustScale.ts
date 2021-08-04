@@ -1,4 +1,4 @@
-import type { Transform } from '@touchtech/dnd-kit-utilities';
+import type { Transform } from '@touchtech/custom-dnd-kit-utilities';
 import type { LayoutRect } from '../../types';
 
 export function adjustScale(

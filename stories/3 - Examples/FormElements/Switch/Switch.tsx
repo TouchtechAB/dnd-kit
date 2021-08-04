@@ -8,11 +8,11 @@ import {
   PointerSensor,
   useSensor,
   useSensors,
-} from '@touchtech/dnd-kit-core';
+} from '@touchtech/custom-dnd-kit-core';
 import {
   restrictToHorizontalAxis,
   restrictToParentElement,
-} from '@touchtech/dnd-kit-modifiers';
+} from '@touchtech/custom-dnd-kit-modifiers';
 import classNames from 'classnames';
 
 import {State} from './constants';

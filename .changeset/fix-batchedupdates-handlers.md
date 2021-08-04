@@ -1,5 +1,5 @@
 ---
-"@touchtech/dnd-kit-core": patch
+"@touchtech/custom-dnd-kit-core": patch
 ---
 
 fix: do not wrap consumer-defined handlers in batchedUpdates

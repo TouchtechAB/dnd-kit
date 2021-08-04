@@ -8,8 +8,8 @@
 
 <p align="left">
 <a href="https://github.com/clauderic/dnd-kit/actions"><img src="https://badgen.net/github/checks/clauderic/dnd-kit" alt="Build status" /></a>
-<a href="https://www.npmjs.com/package/@touchtech/dnd-kit-core"><img src="https://img.shields.io/npm/v/@touchtech/dnd-kit-core.svg" alt="Stable Release" /></a>
-<a href="https://bundlephobia.com/result?p=@touchtech/dnd-kit-core"><img alt="gzip size" src="https://badgen.net/bundlephobia/minzip/@touchtech/dnd-kit-core?label=gzip%20size&color=green"/></a>
+<a href="https://www.npmjs.com/package/@touchtech/custom-dnd-kit-core"><img src="https://img.shields.io/npm/v/@touchtech/custom-dnd-kit-core.svg" alt="Stable Release" /></a>
+<a href="https://bundlephobia.com/result?p=@touchtech/custom-dnd-kit-core"><img alt="gzip size" src="https://badgen.net/bundlephobia/minzip/@touchtech/custom-dnd-kit-core?label=gzip%20size&color=green"/></a>
 <a href="./LICENSE"><img allt="MIT License" src="https://badgen.now.sh/badge/license/MIT"/></a>
 </p>
 
@@ -21,7 +21,7 @@
 - **Fully customizable & extensible:** Customize every detail: animations, transitions, behaviours, styles. Build your own sensors, collision detection algorithms, customize key bindings and so much more.
 - **Accessibility:** Keyboard support, sensible default aria attributes, customizable screen reader instructions and live regions built-in.
 - **Performance:** It was built with performance in mind in order to support silky smooth animations.
-- **Presets:** Need to build a sortable interface? Check out `@touchtech/dnd-kit-sortable`, which is a thin layer built on top of `@touchtech/dnd-kit-core`. More presets coming in the future.
+- **Presets:** Need to build a sortable interface? Check out `@touchtech/custom-dnd-kit-sortable`, which is a thin layer built on top of `@touchtech/custom-dnd-kit-core`. More presets coming in the future.
 
 ## Documentation
 To learn how to get started with **dnd kit**, visit the official documentation website. You'll find in-depth API documentation, tips and guides to help you build drag and drop interfaces. 
@@ -52,9 +52,9 @@ Check out our [quick start guide](https://docs.dndkit.com/introduction/getting-s
 
 ### Extensibility
 
-Extensibility is at the core of **dnd kit**. It was built is built to be lean and extensible. It ships with the features we believe most people will want most of the time, and provides extension points to build the rest on top of `@touchtech/dnd-kit-core`.
+Extensibility is at the core of **dnd kit**. It was built is built to be lean and extensible. It ships with the features we believe most people will want most of the time, and provides extension points to build the rest on top of `@touchtech/custom-dnd-kit-core`.
 
-A prime example of the level of extensibility of **dnd kit** is the [Sortable preset](https://docs.dndkit.com/presets/sortable), which is built using the extension points that are exposed by `@touchtech/dnd-kit-core`.
+A prime example of the level of extensibility of **dnd kit** is the [Sortable preset](https://docs.dndkit.com/presets/sortable), which is built using the extension points that are exposed by `@touchtech/custom-dnd-kit-core`.
 
 The primary extension points of **dnd kit** are:
 
@@ -89,7 +89,7 @@ The main **tradeoff** with not using the HTML5 Drag and drop API is that you won
 
 **dnd kit** lets you build drag and drop interfaces without having to mutate the DOM every time an item needs to shift position.
 
-This is possible because **dnd kit** lazily calculates and stores the initial positions and layout of your droppable containers when a drag operation is initiated. These positions are passed down to your components that use `useDraggable` and `useDroppable` so that you can compute the new positions of your items while a drag operation is underway, and move them to their new positions using performant CSS properties that do not trigger a repaint such as `translate3d` and `scale`. For an example of how this can be achieved, check out the implementation of the sorting strategies that are exposed by the [`@touchtech/dnd-kit-sortable`](presets/sortable.md) library.
+This is possible because **dnd kit** lazily calculates and stores the initial positions and layout of your droppable containers when a drag operation is initiated. These positions are passed down to your components that use `useDraggable` and `useDroppable` so that you can compute the new positions of your items while a drag operation is underway, and move them to their new positions using performant CSS properties that do not trigger a repaint such as `translate3d` and `scale`. For an example of how this can be achieved, check out the implementation of the sorting strategies that are exposed by the [`@touchtech/custom-dnd-kit-sortable`](presets/sortable.md) library.
 
 This isn't to say that you can't shift the position of the items in the DOM while dragging, this is something that **is supported** and sometimes inevitable. In some cases, it won't be possible to know in advance what the new position and layout of the item until you move it in the DOM. Just know that these kind of mutations to the DOM while dragging are much more expensive and will cause a repaint, so if possible, prefer computing the new positions using `translate3d` and `scale`.
 
@@ -101,11 +101,11 @@ This isn't to say that you can't shift the position of the items in the DOM whil
 
 ### Packages contained within this repository
 
-- `@touchtech/dnd-kit-core`
-- `@touchtech/dnd-kit-accessibility`
-- `@touchtech/dnd-kit-sortable`
-- `@touchtech/dnd-kit-modifiers`
-- `@touchtech/dnd-kit-utilities`
+- `@touchtech/custom-dnd-kit-core`
+- `@touchtech/custom-dnd-kit-accessibility`
+- `@touchtech/custom-dnd-kit-sortable`
+- `@touchtech/custom-dnd-kit-modifiers`
+- `@touchtech/custom-dnd-kit-utilities`
 
 ### Installing dependencies
 

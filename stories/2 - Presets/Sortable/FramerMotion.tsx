@@ -8,14 +8,14 @@ import {
   KeyboardSensor,
   useSensor,
   useSensors,
-} from '@touchtech/dnd-kit-core';
+} from '@touchtech/custom-dnd-kit-core';
 import {
   SortableContext,
   useSortable,
   arrayMove,
   rectSortingStrategy,
   sortableKeyboardCoordinates,
-} from '@touchtech/dnd-kit-sortable';
+} from '@touchtech/custom-dnd-kit-sortable';
 
 import {GridContainer, Wrapper} from '../../components';
 import {createRange} from '../../utilities';

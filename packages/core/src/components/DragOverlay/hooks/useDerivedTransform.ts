@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { Transform, useLazyMemo } from '@touchtech/dnd-kit-utilities';
+import { Transform, useLazyMemo } from '@touchtech/custom-dnd-kit-utilities';
 
 import type { ViewRect } from '../../../types';
 

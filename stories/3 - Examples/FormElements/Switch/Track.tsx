@@ -1,5 +1,5 @@
 import React from 'react';
-import {useDroppable} from '@touchtech/dnd-kit-core';
+import {useDroppable} from '@touchtech/custom-dnd-kit-core';
 
 import {State} from './constants';
 import styles from './Switch.module.css';

@@ -1,5 +1,5 @@
 import React from 'react';
-import {useDraggable} from '@touchtech/dnd-kit-core';
+import {useDraggable} from '@touchtech/custom-dnd-kit-core';
 import classNames from 'classnames';
 
 import styles from './Switch.module.css';
