@@ -1,5 +1,5 @@
 import {useRef} from 'react';
-import {useIsomorphicLayoutEffect} from '@dnd-kit/utilities';
+import {useIsomorphicLayoutEffect} from '@touchtech/custom-dnd-kit-utilities';
 
 import type {Data} from '../../store';
 

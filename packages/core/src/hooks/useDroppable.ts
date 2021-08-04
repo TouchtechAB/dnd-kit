@@ -1,5 +1,5 @@
 import {useContext, useEffect, useRef} from 'react';
-import {useIsomorphicLayoutEffect, useNodeRef} from '@dnd-kit/utilities';
+import {useIsomorphicLayoutEffect, useNodeRef} from '@touchtech/custom-dnd-kit-utilities';
 
 import {Context, Action, Data} from '../store';
 import type {LayoutRect} from '../types';

@@ -11,14 +11,14 @@ import {
   useDndContext,
   LayoutMeasuringStrategy,
   DragEndEvent,
-} from '@dnd-kit/core';
+} from '@touchtech/custom-dnd-kit-core';
 import {
   arrayMove,
   useSortable,
   SortableContext,
   sortableKeyboardCoordinates,
-} from '@dnd-kit/sortable';
-import {CSS} from '@dnd-kit/utilities';
+} from '@touchtech/custom-dnd-kit-sortable';
+import {CSS} from '@touchtech/custom-dnd-kit-utilities';
 import classNames from 'classnames';
 
 import {createRange} from '../../../utilities';

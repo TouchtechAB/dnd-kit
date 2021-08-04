@@ -1,5 +1,5 @@
 import {useState, useCallback, useMemo, useRef, useEffect} from 'react';
-import {add} from '@dnd-kit/utilities';
+import {add} from '@touchtech/custom-dnd-kit-utilities';
 
 import {
   defaultCoordinates,

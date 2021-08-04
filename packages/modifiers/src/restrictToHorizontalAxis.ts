@@ -1,4 +1,4 @@
-import type {Modifier} from '@dnd-kit/core';
+import type {Modifier} from '@touchtech/custom-dnd-kit-core';
 
 export const restrictToHorizontalAxis: Modifier = ({transform}) => {
   return {

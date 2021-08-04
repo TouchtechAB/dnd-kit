@@ -1,11 +1,11 @@
 import React from 'react';
-import {LayoutMeasuringStrategy} from '@dnd-kit/core';
-import {restrictToWindowEdges} from '@dnd-kit/modifiers';
+import {LayoutMeasuringStrategy} from '@touchtech/custom-dnd-kit-core';
+import {restrictToWindowEdges} from '@touchtech/custom-dnd-kit-modifiers';
 import {
   AnimateLayoutChanges,
   defaultAnimateLayoutChanges,
   rectSortingStrategy,
-} from '@dnd-kit/sortable';
+} from '@touchtech/custom-dnd-kit-sortable';
 
 import {Sortable, Props as SortableProps} from './Sortable';
 import {GridContainer} from '../../components';

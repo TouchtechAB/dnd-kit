@@ -8,12 +8,12 @@ import {
   Modifiers,
   useDraggable,
   Translate,
-} from '@dnd-kit/core';
+} from '@touchtech/custom-dnd-kit-core';
 import {
   restrictToHorizontalAxis,
   restrictToVerticalAxis,
   restrictToWindowEdges,
-} from '@dnd-kit/modifiers';
+} from '@touchtech/custom-dnd-kit-modifiers';
 
 import {Axis, Draggable, Wrapper} from '../../components';
 

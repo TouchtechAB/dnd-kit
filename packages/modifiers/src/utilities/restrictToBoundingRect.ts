@@ -1,5 +1,5 @@
-import type {ViewRect} from '@dnd-kit/core';
-import type {Transform} from '@dnd-kit/utilities';
+import type {ViewRect} from '@touchtech/custom-dnd-kit-core';
+import type {Transform} from '@touchtech/custom-dnd-kit-utilities';
 
 export function restrictToBoundingRect(
   transform: Transform,

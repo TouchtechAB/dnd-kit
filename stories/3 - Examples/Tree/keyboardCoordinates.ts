@@ -4,7 +4,7 @@ import {
   KeyboardCode,
   RectEntry,
   KeyboardCoordinateGetter,
-} from '@dnd-kit/core';
+} from '@touchtech/custom-dnd-kit-core';
 
 import type {SensorContext} from './types';
 import {getProjection} from './utilities';

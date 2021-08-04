@@ -1,4 +1,4 @@
-# @dnd-kit/utilities
+# @touchtech/custom-dnd-kit-utilities
 
 ## 2.0.0
 

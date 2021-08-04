@@ -10,13 +10,13 @@ import {
   PointerActivationConstraint,
   Modifiers,
   useSensors,
-} from '@dnd-kit/core';
+} from '@touchtech/custom-dnd-kit-core';
 import {
   createSnapModifier,
   restrictToHorizontalAxis,
   restrictToVerticalAxis,
   restrictToWindowEdges,
-} from '@dnd-kit/modifiers';
+} from '@touchtech/custom-dnd-kit-modifiers';
 
 import {
   Axis,

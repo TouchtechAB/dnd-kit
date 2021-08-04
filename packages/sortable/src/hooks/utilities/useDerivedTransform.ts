@@ -1,6 +1,6 @@
 import {useEffect, useRef, useState} from 'react';
-import {getBoundingClientRect, LayoutRect} from '@dnd-kit/core';
-import type {Transform} from '@dnd-kit/utilities';
+import {getBoundingClientRect, LayoutRect} from '@touchtech/custom-dnd-kit-core';
+import type {Transform} from '@touchtech/custom-dnd-kit-utilities';
 
 interface Arguments {
   rect: React.MutableRefObject<LayoutRect | null>;

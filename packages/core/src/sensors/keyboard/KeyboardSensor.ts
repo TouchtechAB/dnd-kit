@@ -1,7 +1,7 @@
 import {
   add as getAdjustedCoordinates,
   subtract as getCoordinatesDelta,
-} from '@dnd-kit/utilities';
+} from '@touchtech/custom-dnd-kit-utilities';
 
 import {Listeners} from '../utilities';
 import type {SensorInstance, SensorProps, SensorOptions} from '../types';

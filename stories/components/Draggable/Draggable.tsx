@@ -1,6 +1,6 @@
 import React, {forwardRef} from 'react';
 import classNames from 'classnames';
-import type {DraggableSyntheticListeners, Translate} from '@dnd-kit/core';
+import type {DraggableSyntheticListeners, Translate} from '@touchtech/custom-dnd-kit-core';
 
 import {Handle} from '../Item/components/Handle';
 

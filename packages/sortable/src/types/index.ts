@@ -1,5 +1,5 @@
-import type {LayoutRect, ViewRect} from '@dnd-kit/core';
-import type {Transform} from '@dnd-kit/utilities';
+import type {LayoutRect, ViewRect} from '@touchtech/custom-dnd-kit-core';
+import type {Transform} from '@touchtech/custom-dnd-kit-utilities';
 
 export type SortingStrategy = (args: {
   activeNodeRect: ViewRect | null;

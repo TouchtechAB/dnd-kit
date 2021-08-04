@@ -1,5 +1,5 @@
 import {useCallback, useEffect, useRef, useState} from 'react';
-import {useLazyMemo} from '@dnd-kit/utilities';
+import {useLazyMemo} from '@touchtech/custom-dnd-kit-utilities';
 
 import {getElementLayout} from '../../utilities';
 import type {DroppableContainers, LayoutRectMap} from '../../store/types';

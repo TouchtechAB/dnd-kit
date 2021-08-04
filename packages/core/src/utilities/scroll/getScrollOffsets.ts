@@ -1,4 +1,4 @@
-import {add} from '@dnd-kit/utilities';
+import {add} from '@touchtech/custom-dnd-kit-utilities';
 
 import type {Coordinates} from '../../types';
 import {getScrollCoordinates} from './getScrollCoordinates';

@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import classNames from 'classnames';
-import {DraggableSyntheticListeners} from '@dnd-kit/core';
-import {Transform} from '@dnd-kit/utilities';
+import {DraggableSyntheticListeners} from '@touchtech/custom-dnd-kit-core';
+import {Transform} from '@touchtech/custom-dnd-kit-utilities';
 
 import {Handle, Remove} from './components';
 
